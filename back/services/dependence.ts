@@ -236,7 +236,7 @@ export default class DependenceService {
           }
         }
 
-        const cp = spawn(`${depRunCommand} ${depName}`, {
+        const cp = spawn(`${depRunCommand} ${dependency.name.trim()}`, {
           shell: '/bin/bash',
         });
 
